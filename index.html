@@ -1,0 +1,30 @@
+<!-- index.html -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz Maker</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Quiz Maker</h1>
+        <div id="loginForm">
+            <input type="text" id="username" placeholder="Username">
+            <input type="password" id="password" placeholder="Password">
+            <button onclick="login()">Login</button>
+            <button onclick="register()">Register</button>
+        </div>
+        <div id="quizForm" style="display: none;">
+            <input type="text" id="quizTitle" placeholder="Quiz Title">
+            <textarea id="questions" placeholder="Enter questions and answers"></textarea>
+            <button onclick="createQuiz()">Create Quiz</button>
+        </div>
+        <div id="quizzes"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
